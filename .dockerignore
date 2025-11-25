@@ -1,0 +1,21 @@
+@'
+# Docker ignore
+.git
+.vscode
+.venv
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.env
+*.swp
+*.swo
+*.log
+*.tmp
+*.bak
+*.db
+*.sqlite
+Dockerfile*
+docker-compose*
+*.sh text eol=lf
+'@ | Out-File -FilePath .\.dockerignore -Encoding ASCII

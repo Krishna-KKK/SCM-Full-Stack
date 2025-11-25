@@ -1,0 +1,15 @@
+# Use an official Python base image
+FROM python:alpine
+
+# Set working directory
+WORKDIR /socket-server
+
+# Copy dependencies and install
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy socket server source code
+COPY ./socket-server ./socket-server
+
+# Command to start the WebSocket server
+CMD ["python", "socket_server.py"]

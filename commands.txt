@@ -1,0 +1,12 @@
+docker tag fullstack-backend:latest krishna319/fullstack-backend:latest
+docker tag fullstack-producer:latest krishna319/fullstack-producer:latest
+docker tag fullstack-consumer:latest krishna319/fullstack-consumer:latest
+
+docker push krishna319/fullstack-backend:latest
+docker push krishna319/fullstack-producer:latest
+docker push krishna319/fullstack-consumer:latest
+
+docker pull krishna319/fullstack-backend:latest
+docker pull krishna319/fullstack-producer:latest
+docker pull krishna319/fullstack-consumer:latest
+docker pull bitnami/kafka:latest
